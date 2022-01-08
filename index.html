@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="./style.css">  
+  <script src="./script.js"></script>
+  <title>Fylo landing page with two column layout</title>
+
+</head>
+<body>
+  <nav id="nav-bar" class="grid-container">
+    <img src="./assets/logo.svg" alt="">
+    <ul>
+      <li>
+        Features
+      </li>
+      <li>
+        Team
+      </li>
+      <li>
+        Sign In
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="one grid-container">
+      <div class="illustration">
+        <img src="./assets/illustration-1.svg" alt="illustration">
+      </div>
+      <div class="content">
+        <h1>
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p>
+          Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
+        </p>
+        <input type="email" id="email1" placeholder="Enter yout email ...">
+        <button onclick="checkEmail('email1')">
+          Get Started
+        </button>
+        <p id="email1-submit"></p>
+      </div>
+    </section>
+    <div class="two-background"></div>
+    <section class="two grid-container">
+      <div class="illustration illustration-2">
+        <img src="./assets/illustration-2.svg" alt="illustration">
+      </div>
+      <div class="content">
+        <h1>
+          Stay productive, wherever you are
+        </h1>
+        <p>
+          Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.
+        </p>
+        <p>
+          Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!
+        </p>
+        <a href="#"> See how Fylo works <img src="./assets/icon-arrow.svg" alt="arrow"></a>
+        
+        <div id="quote">
+          <img src="./assets/icon-quotes.svg" alt="quote-mark" id="mark">
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <section id="person">
+            <img src="./assets/avatar-testimonial.jpg" alt="avatar">
+            <span>
+              <h3>Kyle Burton</h3>
+              <h5>Founder & CEO, Huddle</h5>
+            </span>
+          </section>
+        </div>
+      
+      </div>
+    </section>
+    <section class="three grid-container">
+      <div class="content">
+        <h3>
+          Get early access today
+        </h3>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+      <div class="illustration">
+        <input type="email" id="email2" placeholder="email@example.com">
+        <p id="email2-submit"></p>
+        <button onclick="checkEmail('email2')">
+          Get Started For Free
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="grid-container">
+    <ul>
+      <li><img src="./assets/logo.svg" alt="logo"></li>
+      <li><table><tr><td><img src="./assets/icon-phone.svg"></td><td>Phone: +1-543-123-4567</td></tr></table></li>
+      <li><table><tr><td><img src="./assets/icon-email.svg"></td><td>example@fylo.com</td></tr></table></li>
+    </ul>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+    <ul id="social-icons">
+      <li><a href="#"><img src="./assets/linkedin.png" alt="Linkedin"></a></li>
+      <li><a href="#"><img src="./assets/instagram.png" alt="IG"></a></li>
+      <li><a href="#"><img src="./assets/facebook.png" alt="FB"></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
